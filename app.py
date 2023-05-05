@@ -13,7 +13,7 @@ parkingsData = {}
 app = Flask(__name__)
 
 
-@app.route("/entry", methods=['POST', 'GET'])
+@app.route("/entry", methods=['POST'])
 def entry():
     global currentTicketId
     global parkingsData
@@ -28,7 +28,7 @@ def entry():
     return json.dumps(parkingData.ticketId)
 
 
-@app.route("/exit", methods=['POST', 'GET'])
+@app.route("/exit", methods=['POST'])
 def exit():
     global parkingsData
 
