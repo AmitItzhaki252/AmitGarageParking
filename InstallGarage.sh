@@ -7,7 +7,11 @@ sudo apt-get install python3-pip -y
 
 sudo pip3 install --upgrade pip
 
-pip3 install flask boto3 pillow
+sudo pip3 install flask
+
+python3 -c "import flask"
+
+sudo pip3 install flask boto3 pillow
 
 sudo apt install python3-flask -y
 
